@@ -1,0 +1,18 @@
+
+	{% include 'partial/html-header.twig' %}
+
+
+
+	<body class="{{body_class}}">
+
+		{% include 'partial/header.twig' %} 
+		{% include 'widgets/home.twig' %}
+
+			{% block content %}
+				Sorry, no content
+			{% endblock %}
+		{% include 'widgets/home-slide.twig' %}
+		{% include 'widgets/footer-widgets.twig' %}
+		{% include 'partial/footer.twig' %}
+	</body>
+</html>

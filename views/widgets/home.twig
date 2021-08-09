@@ -1,0 +1,29 @@
+  <div class="hero-slider">
+        <div class="swiper-container hero-slider__horizantal-slider">
+            <div class="swiper-wrapper">
+
+         
+
+					{% for i in 1..6 %}
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col position-relative">
+                                        <div class="slide-desc">
+                                            <h2>Yeni İlkbahar/Yaz Koleksiyonunu <br> incelediniz mi ?</h2>
+                                            <p>Yazın rahatlığını, sayemodest kalitesi ile yaşamak için en özel koleksiyonumuzu keşfedin!</p>
+                                            <a href="#kesfet" class="btn btn-secondary btn-lg btn-saye">Keşfet</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="{{ site.theme.link }}/dist/saye-sl-0{{ i }}.jpg "alt="">
+                        </div>
+                   {% endfor %}
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </div>

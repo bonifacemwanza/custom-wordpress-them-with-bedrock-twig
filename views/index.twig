@@ -1,0 +1,55 @@
+{# 
+{% include 'html-header.twig' %}
+</head>
+
+<body>
+   
+	{% include 'header.twig' %}
+
+    <div class="hero-slider">
+        <div class="swiper-container hero-slider__horizantal-slider">
+            <div class="swiper-wrapper">
+
+         
+
+					{% for i in 1..6 %}
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col position-relative">
+                                        <div class="slide-desc">
+                                            <h2>Yeni İlkbahar/Yaz Koleksiyonunu <br> incelediniz mi ?</h2>
+                                            <p>Yazın rahatlığını, sayemodest kalitesi ile yaşamak için en özel koleksiyonumuzu keşfedin!</p>
+                                            <a href="#kesfet" class="btn btn-secondary btn-lg btn-saye">Keşfet</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="{{ site.theme.link }}/dist/saye-sl-0{{ i }}.jpg "alt="">
+                        </div>
+                   {% endfor %}
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </div>
+
+    
+
+   {% include 'footer.twig' %}
+    <!--
+        https://cdn.jsdelivr.net/combine/npm/jquery@3.6.0,npm/popper.js@1.16.1,npm/bootstrap@4.6.0,npm/lodash@4.17.21
+        https://cdn.jsdelivr.net/combine/npm/jquery@3.6.0,npm/swiper@6.7.1/swiper-bundle.min.js,npm/popper.js@1.16.1,npm/bootstrap@4.5.3,npm/lodash@4.17.21
+    -->
+
+
+</body>
+
+</html> #}
+
+
+{% extends "layouts/base.twig" %}
+{% block content %}
+{% endblock %}
